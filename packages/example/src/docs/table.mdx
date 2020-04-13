@@ -1,0 +1,61 @@
+---
+title: table
+description: Useful to communicate actions to your users. Useful to communicate actions to your users. Useful to communicate actions to your users.
+---
+
+# Reference
+
+The following table shows a list of every style prop and the properties within
+each group. To learn more about it, you can also check the
+[Styled System docs](https://styled-system.com/api):
+
+- color style prop has been renamed to textColor
+- space has been split into margin and space
+- flex has been split into flexItem and flexContainer
+
+## Margin
+
+```jsx
+import { Box } from "@chakra-ui/core";
+
+// m={2} refers to the value of `theme.space[2]`
+<Box m={2}>Tomato</Box>;
+
+// You can also use custom values
+<Box maxW="960px" mx="auto" />;
+
+// sets margin `8px` on all viewports and `16px` from the first breakpoint and up
+<Box m={[2, 3]} />;
+```
+
+| Prop                  | CSS Property                       | Theme Field |
+| --------------------- | ---------------------------------- | ----------- |
+| `m`, `margin`         | `margin`                           | `space`     |
+| `mt`, `marginTop`     | `margin-top`                       | `space`     |
+| `mr`, `marginRight`   | `margin-right`                     | `space`     |
+| `mb`, `marginBottom`  | `margin-bottom`                    | `space`     |
+| `ml`, `marginLeft`    | `margin-left`                      | `space`     |
+| `mx`                  | `margin-left` and `margin-right`   | `space`     |
+| `my`                  | `margin-top` and `margin-bottom`   | `space`     |
+
+## Padding
+
+```jsx
+import { Box } from "@chakra-ui/core";
+
+// m={2} refers to the value of `theme.space[2]`
+<Box p={2}>Tomato</Box>;
+
+// You can also use custom values
+<Box maxW="40px" mx="auto" />;
+```
+
+| Prop                  | CSS Property                       | Theme Field |
+| --------------------- | ---------------------------------- | ----------- |
+| `p`, `padding`        | `padding`                          | `space`     |
+| `pt`, `paddingTop`    | `padding-top`                      | `space`     |
+| `pr`, `paddingRight`  | `padding-right`                    | `space`     |
+| `pb`, `paddingBottom` | `padding-bottom`                   | `space`     |
+| `pl`, `paddingLeft`   | `padding-left`                     | `space`     |
+| `px`                  | `padding-left` and `padding-right` | `space`     |
+| `py`                  | `padding-top` and `padding-bottom` | `space`     |

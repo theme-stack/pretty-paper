@@ -1,0 +1,38 @@
+---
+title: Box
+description: Useful to communicate actions to your users.
+---
+
+```js live
+<div>New project</div>
+```
+
+## Props
+
+<PropsTable
+  data={{
+    children: {
+      type: 'ReactNode',
+      description: 'The content to render',
+    },
+    variant: {
+      type: 'string',
+      default: 'gray',
+      description: 'The variant to apply',
+    },
+    size: {
+      type: '0 | 1',
+      default: '0',
+      description: 'The size to apply',
+    },
+    isWaiting: {
+      type: 'Boolean',
+      default: 'false',
+      description: 'Whether it is waiting or not',
+    },
+  }}
+/>
+
+
+## System props
+Box components get `space`. `layout`, `background`, `border`, `position`, `shadow`, `color`, and `flex` style props. Read our Style Props doc page for a full list of available props.

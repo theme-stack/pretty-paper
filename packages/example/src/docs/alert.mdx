@@ -1,0 +1,83 @@
+---
+title: Alert
+description: Useful to communicate actions to your users.
+---
+
+```js live
+<Example></Example>
+```
+
+## Props
+
+### AlertText Props
+
+<PropsTable
+  data={{
+    children: {
+      type: 'ReactNode',
+      description: 'The content to render',
+    },
+    variant: {
+      type: 'string',
+      default: 'gray',
+      description: 'The variant to apply',
+    },
+    size: {
+      type: '0 | 1',
+      default: '0',
+      description: 'The size to apply',
+    },
+  }}
+/>
+
+### AlertText Props
+
+<PropsTable
+  data={{
+    children: {
+      type: 'ReactNode',
+      description: 'The content to render',
+    },
+    variant: {
+      type: 'string',
+      default: 'gray',
+      description: 'The variant to apply',
+    },
+    size: {
+      type: '0 | 1',
+      default: '0',
+      description: 'The size to apply',
+    },
+  }}
+/>
+
+## Style props
+Avatar components get `space` style props. Read our Style Props doc page for a full list of available props.
+
+
+## Examples
+
+### Colors
+
+There are 4 colors to choose from.
+
+```js live
+<button>Colors a</button>
+<button>Colors b</button>
+<button>Colors c</button>
+<button>Colors d</button>
+```
+
+### Sizes
+
+```js live toggle
+<button>Sizes</button>
+```
+
+### Waiting state
+
+If true, when the user clicks inside the text box the current value will be selected. Use this if the user is likely to delete all the text anyway (like the URL bar in browsers)
+
+```js live open toggle
+<button>Waiting</button>
+```

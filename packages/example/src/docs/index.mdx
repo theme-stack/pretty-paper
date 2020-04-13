@@ -1,0 +1,36 @@
+---
+title: About
+description: Radix is a design system built with test, for test.
+---
+
+### Installing Radix
+
+Radix is currently under heavy development, but can be installed by running either of these commands:
+
+```
+npm install @test/radix
+```
+
+or
+
+```
+yarn add @test/radix
+```
+
+### Radix Provider
+
+Make sure to wrap your app in `RadixProvider` to get the default theme:
+
+```js
+import { RadixProvider } from '@test/radix';
+
+const App = () => <RadixProvider>Hey there👋</RadixProvider>;
+```
+
+### Importing components from Radix
+
+All components can be imported directly:
+
+```js
+import { Heading, Text, Link } from '@test/radix';
+```
